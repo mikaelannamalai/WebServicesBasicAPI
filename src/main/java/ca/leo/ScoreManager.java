@@ -1,7 +1,11 @@
 package ca.leo;
 
 public class ScoreManager {
-    public static boolean scoreManager(double score){
-        return score>=6;
+    public ScoreManager() {
     }
+    
+    public static boolean scoreManager(double score) throws Exception{
+        return (score>=6);
+            }
+
 }
