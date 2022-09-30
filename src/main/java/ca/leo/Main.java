@@ -7,16 +7,12 @@ package ca.leo;
 public class Main 
 {
     /**
-     * @param args
+     * 
      */
     public static void main( String[] args )
     {
-        boolean result;
-    
-        Double score=Double.valueOf(args[0]);
         try {
-        result = ScoreManager.scoreManager(score);
-        System.out.println("the score is accepted; "+result);
+            System.out.println("the score is accepted; "+ ScoreManager.scoreManager(args));
         }
         catch (Exception e){
             e.printStackTrace();
