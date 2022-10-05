@@ -13,9 +13,12 @@ public class Main
     {
         try {
             System.out.println("the score is; "+ ScoreManager.scoreManager(args));
+        
         }
         catch (Exception e){
+            
             e.printStackTrace();
+        
         }
     }
 }
