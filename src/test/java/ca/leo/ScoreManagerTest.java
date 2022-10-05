@@ -1,5 +1,6 @@
 package ca.leo;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -19,7 +20,7 @@ public class ScoreManagerTest
         String args[] = new String [1]
 ;       args[0]= "6.0"; 
         boolean result=ScoreManager.scoreManager(args);
-        assertTrue("Testing 6.0",result==true);
+        assertTrue("Testing 6.0",result);
     }
 @Test
     public void shouldAnswerWithfalse() throws Exception
@@ -27,7 +28,7 @@ public class ScoreManagerTest
         String args[] = new String [1]
 ;       args[0]= "3.0";
         boolean result=ScoreManager.scoreManager(args);
-        assertTrue("Testing 3.0",result==false);
+        assertFalse("Testing 3.0",result);
     }
 
 
@@ -37,6 +38,6 @@ public class ScoreManagerTest
         String args[] = new String[3];
         args[0] = "Hello";
         boolean result=ScoreManager.scoreManager(args);
-        assertTrue("Testing invalid format",result==false);
+        assertTrue("Testing invalid format",result);
     }
 }
